@@ -9,7 +9,7 @@ import helmet from 'helmet';
 import dotenv from 'dotenv';
 
 dotenv.config();
-const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/image_api';
+const mongoURI = process.env.MONGODB_URI || 'mongodb://100.20.92.101:27017/image_api';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
