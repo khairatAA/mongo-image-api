@@ -4,6 +4,7 @@ import express from 'express';
 import { uploadImage } from '../controllers/uploadImage';
 import { getImagesMetadata } from '../controllers/getImages';
 import { getImageById } from '../controllers/getImageById';
+import { deleteImage } from '../controllers/deleteImageById';
 import multer from 'multer';
 
 const router = express.Router();
@@ -20,6 +21,9 @@ router.get('/get_image', getImagesMetadata);
 
 // Retrieve a specific image by ID
 router.get('/get_image/:id', getImageById);
+
+// Delete an image by ID
+router.delete('/delete_image/:id', deleteImage);
 
 console.log('Upload route configured successfully'); // Debugging statement
 

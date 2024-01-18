@@ -6,8 +6,10 @@ import mongoose from 'mongoose';
 import imageRoutes from './routes/imageRoutes';
 import cors from 'cors';
 import helmet from 'helmet';
+import dotenv from 'dotenv';
 
-const mongoURI = 'mongodb://172.22.16.1:27017/image_api'
+dotenv.config();
+const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/image_api';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
