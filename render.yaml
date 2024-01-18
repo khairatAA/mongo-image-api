@@ -1,5 +1,5 @@
 services:
   - type: web
-    name: image_api
+    name: mongo-image-api
     buildCommand: npm install && npm run build
     startCommand: npm start
