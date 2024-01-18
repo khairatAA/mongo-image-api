@@ -1,0 +1,5 @@
+services:
+  - type: web
+    name: image_api
+    buildCommand: npm install && npm run build
+    startCommand: npm start
