@@ -7,7 +7,6 @@
 
 ## Overview
 
-...
 This project is a RESTful API built using TypeScript, MongoDB, Node.js, and Express. The API allows users to upload, retrieve, and delete images stored in a MongoDB database. Images are stored in base64 format, and the API supports image formats such as JPG, PNG, and GIF.
 
 ## Table of Contents
@@ -68,7 +67,7 @@ MONGODB_URI=mongodb://your-mongodb-uri/image_api
 
 ### Uploading an Image
 
-#### Endpoint: `POST /images/upload`
+#### Endpoint: `POST /upload`
 
 Description: Uploads an image to the database.
 
@@ -76,14 +75,14 @@ Usage:
 
 1. Open Postman.
 2. Set the request type to POST.
-3. Enter the API endpoint URL: <https://mongo-image-api.onrender.com/images/upload>.
+3. Enter the API endpoint URL: <https://mongo-image-api.onrender.com/upload>.
 4. Set the request body to form-data.
 5. Add a key named image and select a file for the value.
 6. Send the request.
 
 ### Retrieving Images
 
-#### Endpoint: `GET /images/get_image`
+#### Endpoint: `GET /get_images`
 
 Description: Retrieves a list of all stored images.
 
@@ -91,10 +90,10 @@ Usage:
 
 1. Open Postman.
 2. Set the request type to GET.
-3. Enter the API endpoint URL: <https://mongo-image-api.onrender.com/images>.
+3. Enter the API endpoint URL: <https://mongo-image-api.onrender.com/get_images>.
 4. Send the request.
 
-#### Endpoint: `GET /images/get_image/:id`
+#### Endpoint: `GET /get_image/:id`
 
 Description: Retrieves a specific image by ID.
 
@@ -102,13 +101,13 @@ Usage:
 
 1. Open Postman.
 2. Set the request type to GET.
-3. Enter the API endpoint URL: <https://mongo-image-api.onrender.com/images/{image_id}>.
+3. Enter the API endpoint URL: <https://mongo-image-api.onrender.com/get_image/{image_id}>.
 4. Replace `{image_id}` with the actual ID of the image you want to retrieve.
 5. Send the request.
 
 ### Deleting an Image
 
-#### Endpoint: DELETE /images/:id
+#### Endpoint: `DELETE /delete_images/:id`
 
 Description: Deletes an image by ID.
 
@@ -116,6 +115,6 @@ Usage:
 
 1. Open Postman.
 2. Set the request type to DELETE.
-3. Enter the API endpoint URL: <https://mongo-image-api.onrender.com/images/{image_id}>.
+3. Enter the API endpoint URL: <https://mongo-image-api.onrender.com/delete_image/{image_id}>.
 4. Replace `{image_id}` with the actual ID of the image you want to delete.
 5. Send the request.
