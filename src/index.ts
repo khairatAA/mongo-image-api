@@ -16,7 +16,7 @@ const PORT = process.env.PORT || 3000;
 
 // Creates an express app
 app.use(express.json());
-app.use('/images', imageRoutes);
+app.use('/', imageRoutes);
 app.use(cors()); // For Cross-Origin Resource Sharing
 app.use(helmet()); // For enchanced security
 

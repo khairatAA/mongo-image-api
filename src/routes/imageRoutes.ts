@@ -17,7 +17,7 @@ console.log('Middleware configured successfully'); // debugging statement
 router.post('/upload', upload.single('image'), uploadImage);
 
 // Retrieve all images betadata from the database
-router.get('/get_image', getImagesMetadata);
+router.get('/get_images', getImagesMetadata);
 
 // Retrieve a specific image by ID
 router.get('/get_image/:id', getImageById);
