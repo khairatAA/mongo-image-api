@@ -9,7 +9,7 @@ import helmet from 'helmet';
 import dotenv from 'dotenv';
 
 dotenv.config();
-const mongoURI = process.env.MONGODB_URI || 'mongodb://44.225.181.72/image_api?connectTimeoutMS=30000';
+const mongoURI = process.env.MONGODB_URI || 'mongodb://172.22.16.1:27017/image_api';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
