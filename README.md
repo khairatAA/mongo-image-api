@@ -104,6 +104,7 @@ Usage:
 3. Enter the API endpoint URL: <https://mongo-image-api.onrender.com/get_image/{image_id}>.
 4. Replace `{image_id}` with the actual ID of the image you want to retrieve.
 5. Send the request.
+6. Save response to a file and add an extension (the value in its content file) e.g .png, .jpeg or .gif
 
 ### Deleting an Image
 
